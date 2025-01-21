@@ -35,7 +35,7 @@ function Home() {
   }, [title]);
 
   return (
-    <div className="content">
+    <div className="content" id="home">
       <div className="content-image">
         <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
           <div className="carousel-inner">

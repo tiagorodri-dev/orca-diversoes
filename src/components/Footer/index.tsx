@@ -14,7 +14,11 @@ function Footer() {
             <h5 className="text-uppercase mb-4 fw-bold text-warning">
               Sobre nós
             </h5>
-            <p>Desenvolvo...</p>
+            <p>
+              Somos uma empresa especializada no desenvolvimento de brinquedos
+              personalizados e na criação de experiências inesquecíveis para
+              crianças.
+            </p>
           </div>
 
           <div className="col-md-3 mx-auto mt-3">
@@ -28,17 +32,23 @@ function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#aboutus" className="text-white text-decoration-none">
+                <a
+                  href="#quem-somos"
+                  className="text-white text-decoration-none"
+                >
                   Quem somos
                 </a>
               </li>
               <li>
-                <a href="#services" className="text-white text-decoration-none">
+                <a
+                  href="#nossos-servicos"
+                  className="text-white text-decoration-none"
+                >
                   Nossos serviços
                 </a>
               </li>
               <li>
-                <a href="#contact" className="text-white text-decoration-none">
+                <a href="#contato" className="text-white text-decoration-none">
                   Contato
                 </a>
               </li>
@@ -51,17 +61,19 @@ function Footer() {
             </h5>
             <ul className="list-unstyled">
               <li>
-                <BsTelephoneFill className="me-2" /> (89) 99415-9560
+                <BsTelephoneFill className="me-2" /> Telefone: (89) 99415-9560
               </li>
               <li>
-                <BsWhatsapp className="me-2" /> (89) 99415-9560
+                <BsWhatsapp className="me-2" /> Whatsapp: (89) 99415-9560
               </li>
               <li>
-                <BsFillEnvelopeFill className="me-2" /> amilton...
+                <BsFillEnvelopeFill className="me-2" /> E-mail:
+                amiltonbrandao11@gmail.com
               </li>
               <li>
-                <BsFillGeoAltFill className="me-2" /> Avenida Senador Dirceu
-                Arcoverde, 1965 - Irapuá II <br /> Floriano, PI, 64.800-430
+                <BsFillGeoAltFill className="me-2" /> Endereço: Avenida Senador
+                Dirceu Arcoverde, 1965 - Irapuá II <br /> Floriano, PI,
+                64.800-430
               </li>
             </ul>
           </div>
@@ -70,12 +82,10 @@ function Footer() {
         <div className="row justify-content-center align-items-center mt-4">
           <div className="col-md-7 col-lg-8 text-center">
             <p className="mb-0">
-              Copyright &copy; {new Date().getFullYear()} Orca Diversões e Entretenimento.
-              Todos os direitos reservados.
+              Copyright &copy; {new Date().getFullYear()} Orca Diversões e
+              Entretenimento. Todos os direitos reservados.
             </p>
-            <p className="mb-0">
-              41.584.671/0001-24
-            </p>
+            <p className="mb-0">CNPJ: 41.584.671/0001-24</p>
             <p className="mb-0">
               Desenvolvido por{" "}
               <a

@@ -1,0 +1,22 @@
+.smooth-scale-effect {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  animation: smoothScale 1.5s infinite ease-in-out;
+  transition: transform 0.2s ease;
+}
+
+@keyframes smoothScale {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.smooth-scale-effect:hover {
+  transform: scale(1.15);
+}

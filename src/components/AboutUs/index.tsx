@@ -6,7 +6,7 @@ function AboutUs() {
   return (
     <div className="p-5 d-flex flex-column justify-content-center align-items-center" id="quem-somos">
       <h1 className="text-center fw-bold">Conheça um pouco mais sobre nós</h1>
-      <div className="d-flex flex-column flex-md-row gap-3 gap-5 mt-4">
+      <div className="d-flex flex-column flex-md-row align-items-center gap-3 gap-5 mt-4">
         <img className="d-block" src={logo} alt="Logo Orca Diversões" width={200} />
         <p className="paragraph" style={{color: "#7A7A7A"}}>
             Somos a Orca Diversões e Entretenimento, uma empresa localizada em Floriano, PI, especializada no desenvolvimento de brinquedos personalizados e na criação de experiências inesquecíveis para crianças. Com mais de X anos de atuação no mercado de cenografia e entretenimento, nos destacamos pela nossa paixão em transformar ideias criativas em realidade. <br/><br/>

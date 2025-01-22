@@ -1,16 +1,20 @@
-import {
-  BsFillEnvelopeFill,
-  BsFillGeoAltFill,
-  BsTelephoneFill,
-  BsWhatsapp,
-} from "react-icons/bs";
+import { BsFillEnvelopeFill, BsFillGeoAltFill, BsTelephoneFill, BsWhatsapp, } from "react-icons/bs";
 
 function Footer() {
+
+  const handleNavClick = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>, sectionId: string) => {
+    event.preventDefault();
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <footer className="bg-dark text-white pt-5 pb-4">
       <div className="container text-center text-md-start">
         <div className="row">
-          <div className="col-md-4 mx-auto mt-3">
+          <div className="col-md-5 mx-auto mt-3">
             <h5 className="text-uppercase mb-4 fw-bold text-warning">
               Sobre nós
             </h5>
@@ -21,34 +25,36 @@ function Footer() {
             </p>
           </div>
 
-          <div className="col-md-3 mx-auto mt-3">
+          <div className="col-md-2 mx-auto mt-3">
             <h5 className="text-uppercase mb-4 fw-bold text-warning">
               Links Úteis
             </h5>
             <ul className="list-unstyled">
               <li>
-                <a href="#home" className="text-white text-decoration-none">
+                <a href="#" className="text-white text-decoration-none" onClick={(e) => handleNavClick(e, 'home')}>
                   Home
                 </a>
               </li>
               <li>
                 <a
-                  href="#quem-somos"
+                  href="#"
                   className="text-white text-decoration-none"
+                  onClick={(e) => handleNavClick(e, 'quem-somos')}
                 >
                   Quem somos
                 </a>
               </li>
               <li>
                 <a
-                  href="#nossos-servicos"
+                  href="#"
                   className="text-white text-decoration-none"
+                  onClick={(e) => handleNavClick(e, 'nossos-servicos')}
                 >
                   Nossos serviços
                 </a>
               </li>
               <li>
-                <a href="#contato" className="text-white text-decoration-none">
+                <a href="#" className="text-white text-decoration-none" onClick={(e) => handleNavClick(e, 'contato')}>
                   Contato
                 </a>
               </li>

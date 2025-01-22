@@ -2,6 +2,14 @@ import logo from "../../assets/logo-orca.webp";
 import { BsWhatsapp } from "react-icons/bs";
 
 function Navbar() {
+  const handleNavClick = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>, sectionId: string) => {
+    event.preventDefault();
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
@@ -23,22 +31,22 @@ function Navbar() {
         <div className="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
           <ul className="navbar-nav gap-lg-4">
             <li className="nav-item text-uppercase">
-              <a className="nav-link active" aria-current="page" href="#home">
+              <a className="nav-link" aria-current="page" href="#" onClick={(e) => handleNavClick(e, 'home')}>
                 Home
               </a>
             </li>
             <li className="nav-item text-uppercase">
-              <a className="nav-link" href="#quem-somos">
+              <a className="nav-link" href="#" onClick={(e) => handleNavClick(e, 'quem-somos')}>
                 Quem somos
               </a>
             </li>
             <li className="nav-item text-uppercase">
-              <a className="nav-link" href="#nossos-servicos">
+              <a className="nav-link" href="#" onClick={(e) => handleNavClick(e, 'nossos-servicos')}>
                 Nossos serviços
               </a>
             </li>
             <li className="nav-item text-uppercase">
-              <a className="nav-link" href="#contato">
+              <a className="nav-link" href="#" onClick={(e) => handleNavClick(e, 'contato')}>
                 Contato
               </a>
             </li>

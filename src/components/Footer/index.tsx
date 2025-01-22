@@ -1,4 +1,5 @@
 import { BsFillEnvelopeFill, BsFillGeoAltFill, BsTelephoneFill, BsWhatsapp, } from "react-icons/bs";
+import "./style.css";
 
 function Footer() {
 
@@ -11,7 +12,7 @@ function Footer() {
   };
 
   return (
-    <footer className="bg-dark text-white pt-5 pb-4">
+    <footer className="footer text-white pt-5 pb-4">
       <div className="container text-center text-md-start">
         <div className="row">
           <div className="col-md-5 mx-auto mt-3">
@@ -63,7 +64,7 @@ function Footer() {
 
           <div className="col-md-5 mx-auto mt-3">
             <h5 className="text-uppercase mb-4 fw-bold text-warning">
-              Contato
+              Mais informações
             </h5>
             <ul className="list-unstyled">
               <li>

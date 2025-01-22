@@ -1,10 +1,9 @@
 import { useState, useEffect } from "react";
+import ButtonWhatsapp from "./ButtonWhatsapp";
 import childrenone from "../../assets/children-one.webp";
 import childrentwo from "../../assets/children-two.webp";
 import childrenthree from "../../assets/children-three.webp";
 import "./style.css";
-import ButtonWhatsapp from "./ButtonWhatsapp";
-// import { BsWhatsapp } from "react-icons/bs";
 
 function Home() {
   const [title, setTitle] = useState("Desenvolvendo brinquedos de alta qualidade");

@@ -52,11 +52,11 @@ function Navbar() {
             </li>
             <li className="nav-item text-uppercase d-lg-none">
               <a
-                href="https://wa.me/SEU_NUMERO_DE_TELEFONE"
+                href="https://api.whatsapp.com/send?phone=5589994159560&text=Ol%C3%A1,%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20de%20um%20brinquedo."
                 className="btn btn-success d-flex align-items-center gap-2"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ whiteSpace: 'nowrap' }}
+                style={{ whiteSpace: 'nowrap', backgroundColor: "#25D366", border: "none" }}
               >
                 <BsWhatsapp /> Solicitar um orçamento
               </a>
@@ -68,7 +68,7 @@ function Navbar() {
           className="btn btn-success text-uppercase d-none d-lg-flex align-items-center gap-2 ms-lg-3"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ whiteSpace: 'nowrap' }}
+          style={{ whiteSpace: 'nowrap', backgroundColor: "#25D366", border: "none" }}
         >
           <BsWhatsapp /> Solicitar um orçamento
         </a>

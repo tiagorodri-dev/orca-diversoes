@@ -53,6 +53,29 @@ function OurServices() {
           <BsWhatsapp /> Solicitar um orçamento
         </a>
       </div>
+
+      <h4 className="mt-5">Veja um pouco mais do nosso trabalho</h4>
+
+      <div className="media-gallery d-flex flex-wrap gap-3 justify-content-center mt-4">
+        <div className="media-item">
+          <img src="path/to/image1.jpg" alt="Trabalho da empresa 1" className="img-fluid" />
+        </div>
+        <div className="media-item">
+          <img src="path/to/image2.jpg" alt="Trabalho da empresa 2" className="img-fluid" />
+        </div>
+        <div className="media-item">
+          <video controls className="img-fluid">
+            <source src="path/to/video1.mp4" type="video/mp4" />
+            Seu navegador não suporta o elemento de vídeo.
+          </video>
+        </div>
+        <div className="media-item">
+          <video controls className="img-fluid">
+            <source src="path/to/video2.mp4" type="video/mp4" />
+            Seu navegador não suporta o elemento de vídeo.
+          </video>
+        </div>
+      </div>
     </div>
   );
 }

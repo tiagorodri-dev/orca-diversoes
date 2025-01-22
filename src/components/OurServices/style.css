@@ -20,3 +20,38 @@
 .smooth-scale-effect:hover {
   transform: scale(1.15);
 }
+
+.media-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.media-item {
+  flex: 1 1 calc(25% - 1rem);
+  max-width: calc(25% - 1rem);
+}
+
+.media-item img,
+.media-item video {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .media-item {
+      flex: 1 1 calc(50% - 1rem);
+      max-width: calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .media-item {
+      flex: 1 1 100%;
+      max-width: 100%;
+  }
+}

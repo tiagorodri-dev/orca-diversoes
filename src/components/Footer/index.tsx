@@ -12,11 +12,11 @@ function Footer() {
   };
 
   return (
-    <footer className="footer text-white pt-5 pb-4">
+    <footer className="footer text-black pt-5 pb-4">
       <div className="container text-center text-md-start">
         <div className="row">
           <div className="col-md-5 mx-auto mt-3">
-            <h5 className="text-uppercase mb-4 fw-bold text-warning">
+            <h5 className="text-uppercase mb-4 fw-bold">
               Sobre nós
             </h5>
             <p>
@@ -27,19 +27,19 @@ function Footer() {
           </div>
 
           <div className="col-md-2 mx-auto mt-3">
-            <h5 className="text-uppercase mb-4 fw-bold text-warning">
+            <h5 className="text-uppercase mb-4 fw-bold">
               Links Úteis
             </h5>
             <ul className="list-unstyled">
               <li>
-                <a href="#" className="text-white text-decoration-none" onClick={(e) => handleNavClick(e, 'home')}>
+                <a href="#" className="text-black text-decoration-none" onClick={(e) => handleNavClick(e, 'home')}>
                   Home
                 </a>
               </li>
               <li>
                 <a
                   href="#"
-                  className="text-white text-decoration-none"
+                  className="text-black text-decoration-none"
                   onClick={(e) => handleNavClick(e, 'quem-somos')}
                 >
                   Quem somos
@@ -48,14 +48,14 @@ function Footer() {
               <li>
                 <a
                   href="#"
-                  className="text-white text-decoration-none"
+                  className="text-black text-decoration-none"
                   onClick={(e) => handleNavClick(e, 'nossos-servicos')}
                 >
                   Nossos serviços
                 </a>
               </li>
               <li>
-                <a href="#" className="text-white text-decoration-none" onClick={(e) => handleNavClick(e, 'contato')}>
+                <a href="#" className="text-black text-decoration-none" onClick={(e) => handleNavClick(e, 'contato')}>
                   Contato
                 </a>
               </li>
@@ -63,7 +63,7 @@ function Footer() {
           </div>
 
           <div className="col-md-5 mx-auto mt-3">
-            <h5 className="text-uppercase mb-4 fw-bold text-warning">
+            <h5 className="text-uppercase mb-4 fw-bold">
               Mais informações
             </h5>
             <ul className="list-unstyled">
@@ -89,14 +89,13 @@ function Footer() {
         <div className="row justify-content-center align-items-center mt-4">
           <div className="col-md-7 col-lg-8 text-center">
             <p className="mb-0">
-              Copyright &copy; {new Date().getFullYear()} Orca Diversões e
-              Entretenimento. Todos os direitos reservados.
+            Orca Diversões e Entretenimento &copy; {new Date().getFullYear()} - Todos os direitos reservados.
             </p>
             <p className="mb-0">CNPJ: 41.584.671/0001-24</p>
             <p className="mb-0">
               Desenvolvido por{" "}
               <a
-                className="text-white text-decoration-none"
+                className="text-black text-decoration-none"
                 href="https://tiagorodrigues.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"

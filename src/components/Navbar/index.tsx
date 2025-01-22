@@ -1,5 +1,6 @@
 import logo from "../../assets/logo-orca.webp";
 import { BsWhatsapp } from "react-icons/bs";
+import "./style.css";
 
 function Navbar() {
   const handleNavClick = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>, sectionId: string) => {

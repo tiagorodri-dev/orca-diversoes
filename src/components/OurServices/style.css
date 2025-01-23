@@ -37,7 +37,8 @@
 .media-item img,
 .media-item video {
   width: 100%;
-  height: auto;
+  height: 20rem;
+  object-fit: cover;
   border-radius: 0.5rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }

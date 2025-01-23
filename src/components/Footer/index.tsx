@@ -68,17 +68,16 @@ function Footer() {
             </h5>
             <ul className="list-unstyled">
               <li>
-                <BsTelephoneFill className="me-2" /> Telefone: (89) 99415-9560
+                <BsTelephoneFill className="me-2" /> (89) 99415-9560
               </li>
               <li>
-                <BsWhatsapp className="me-2" /> Whatsapp: (89) 99415-9560
+                <BsWhatsapp className="me-2" /> (89) 99415-9560
               </li>
               <li>
-                <BsFillEnvelopeFill className="me-2" /> E-mail:
-                amiltonbrandao11@gmail.com
+                <BsFillEnvelopeFill className="me-2" /> amiltonbrandao11@gmail.com
               </li>
               <li>
-                <BsFillGeoAltFill className="me-2" /> Endereço: Avenida Senador
+                <BsFillGeoAltFill className="me-2" /> Avenida Senador
                 Dirceu Arcoverde, 1965 - Irapuá II <br /> Floriano, PI,
                 64.800-430
               </li>

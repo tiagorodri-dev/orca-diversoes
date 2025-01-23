@@ -1,10 +1,4 @@
-import React from "react";
-import {
-  BsFillGeoAltFill,
-  BsFillTelephoneFill,
-  BsEnvelopeFill,
-  BsWhatsapp,
-} from "react-icons/bs";
+import { BsFillGeoAltFill, BsFillTelephoneFill, BsEnvelopeFill, BsWhatsapp, } from "react-icons/bs";
 import "./style.css";
 
 function Contact() {
@@ -55,7 +49,6 @@ function Contact() {
             width="600"
             height="450"
             style={{ border: 0 }}
-            allowFullScreen=""
             loading="lazy"
             title="Localização"
           ></iframe>

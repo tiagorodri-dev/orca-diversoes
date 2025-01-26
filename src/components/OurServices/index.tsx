@@ -2,6 +2,7 @@ import { BsBoxSeam, BsHouseDoor, BsPuzzle, BsWhatsapp } from "react-icons/bs";
 import imgOne from "../../assets/img-orca1.jpg";
 import imgTwo from "../../assets/img-orca2.jpg";
 import imgThree from "../../assets/img-orca3.jpg";
+import videoOne from "../../assets/video-one.mp4"
 import "./style.css";
 
 function OurServices() {
@@ -57,7 +58,7 @@ function OurServices() {
         </a>
       </div>
 
-      <h4 className="mt-5">Veja um pouco mais do nosso trabalho</h4>
+      <h4 className="mt-5 text-center">Veja um pouco mais do nosso trabalho</h4>
 
       <div className="media-gallery d-flex flex-wrap gap-3 justify-content-center mt-4">
         <div className="images-gallery d-flex flex-wrap gap-3 justify-content-center">
@@ -74,7 +75,13 @@ function OurServices() {
         <div className="videos-gallery d-flex flex-wrap gap-3 justify-content-center">
           <div className="media-item">
             <video controls className="img-fluid">
-              <source src="path/to/video1.mp4" type="video/mp4" />
+              <source src={videoOne} type="video/mp4" />
+              Seu navegador não suporta o elemento de vídeo.
+            </video>
+          </div>
+          <div className="media-item">
+            <video controls className="img-fluid">
+              <source src="path/to/video2.mp4" type="video/mp4" />
               Seu navegador não suporta o elemento de vídeo.
             </video>
           </div>

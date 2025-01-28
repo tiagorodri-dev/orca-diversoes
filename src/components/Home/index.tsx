@@ -6,7 +6,15 @@ import childrenthree from "../../assets/children-three.webp";
 import "./style.css";
 
 function Home() {
-  const [title, setTitle] = useState("Desenvolvendo brinquedos de alta qualidade");
+  const [title, setTitle] = useState("Proporcione diversão com brinquedos de alta qualidade e segurança");
+
+  const handleNavClick = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>, sectionId: string) => {
+    event.preventDefault();
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   useEffect(() => {
     const carouselElement = document.getElementById('carouselExampleControls');
@@ -14,16 +22,16 @@ function Home() {
       const activeIndex = event.to;
       switch (activeIndex) {
         case 0:
-          setTitle("Desenvolvendo brinquedos de alta qualidade");
+          setTitle("Proporcione diversão com brinquedos de alta qualidade e segurança");
           break;
         case 1:
-          setTitle("Criando experiências inesquecíveis");
+          setTitle("Ofereça experiências inesquecíveis através de brinquedos inovadores");
           break;
         case 2:
-          setTitle("Promovendo a diversão e alegria");
+          setTitle("Entregue um toque de alegria ao seu negócio com brinquedos personalizados");
           break;
         default:
-          setTitle("Desenvolvendo brinquedos de alta qualidade");
+          setTitle("Proporcione diversão com brinquedos de alta qualidade e segurança");
           break;
       }
     };
@@ -60,6 +68,7 @@ function Home() {
       </div>
       <div className="banner">
         <h1 className="title fw-bold">{title}</h1>
+        <a href="#" className="cta-button"  onClick={(e) => handleNavClick(e, 'quem-somos')}>Conheça mais</a>
       </div>
       <ButtonWhatsapp />
     </div>

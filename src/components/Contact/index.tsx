@@ -1,4 +1,10 @@
-import { BsFillGeoAltFill, BsFillTelephoneFill, BsEnvelopeFill, BsWhatsapp, } from "react-icons/bs";
+import {
+  BsFillGeoAltFill,
+  BsFillTelephoneFill,
+  BsEnvelopeFill,
+  BsWhatsapp,
+  BsCursorFill,
+} from "react-icons/bs";
 import "./style.css";
 
 function Contact() {
@@ -14,8 +20,9 @@ function Contact() {
       </p>
 
       <div className="d-flex flex-column justify-content-center flex-md-row gap-5 w-100">
-        <div className="d-flex flex-column align-items-center justify-content-center">
+        <div className="d-flex flex-column align-items-right justify-content-around">
           <ul className="list-unstyled mt-4">
+          <p>Entre em contato ou visite-nos.</p>
             <li className="mb-2 d-flex align-items-center">
               <BsFillTelephoneFill className="me-2" /> (89) 99415-9560
             </li>
@@ -23,7 +30,7 @@ function Contact() {
               <BsWhatsapp className="me-2" /> (89) 99415-9560
             </li>
             <li className="mb-2 d-flex align-items-center">
-              <BsEnvelopeFill className="me-2" />  amiltonbrandao11@gmail.com
+              <BsEnvelopeFill className="me-2" /> amiltonbrandao11@gmail.com
             </li>
             <li className="mb-2 d-flex align-items-center">
               <BsFillGeoAltFill className="me-2" /> Avenida Senador Dirceu
@@ -35,12 +42,24 @@ function Contact() {
                 className="btn btn-success text-uppercase d-flex align-items-center"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ whiteSpace: "nowrap", border: "none" }}
+                style={{ whiteSpace: "nowrap"}}
               >
                 <BsWhatsapp /> Fale conosco pelo WhatsApp
               </a>
             </li>
           </ul>
+
+          <div className="mt-4">
+            <h3>Como chegar?</h3>
+            <a
+              href="https://www.google.com/maps/dir/?api=1&destination=Avenida+Senador+Dirceu+Arcoverde,+1965+-+Irapuá+II,+Floriano,+PI,+64800-430"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary d-flex align-items-center justify-content-center gap-2 mt-2 route-button"
+            >
+              <BsCursorFill /> Ver rotas
+            </a>
+          </div>
         </div>
 
         <div className="map-container mt-4">

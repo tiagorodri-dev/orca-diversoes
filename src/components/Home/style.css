@@ -69,6 +69,11 @@
     font-size: 30px;
     max-width: 90%;
   }
+
+  .cta-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -79,5 +84,10 @@
   .title {
     font-size: 20px;
     max-width: 100%;
+  }
+
+  .cta-button {
+    font-size: 14px;
+    padding: 6px 12px;
   }
 }

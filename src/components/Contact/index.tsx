@@ -1,11 +1,4 @@
-import React from "react";
-import {
-  BsFillGeoAltFill,
-  BsFillTelephoneFill,
-  BsEnvelopeFill,
-  BsWhatsapp,
-  BsCursorFill,
-} from "react-icons/bs";
+import { BsFillGeoAltFill, BsFillTelephoneFill, BsEnvelopeFill, BsWhatsapp, BsCursorFill,} from "react-icons/bs";
 import "./style.css";
 
 function Contact() {

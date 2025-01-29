@@ -33,7 +33,7 @@
 
 .route-button {
   width: auto;
-  max-width: 300px;
+  /* max-width: 300px; */
 }
 
 @media (max-width: 768px) {

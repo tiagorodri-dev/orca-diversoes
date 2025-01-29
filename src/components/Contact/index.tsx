@@ -1,3 +1,4 @@
+import React from "react";
 import {
   BsFillGeoAltFill,
   BsFillTelephoneFill,
@@ -14,57 +15,63 @@ function Contact() {
       id="contato"
     >
       <h1 className="fw-bold">Fale conosco</h1>
-      <p>
+      <p className="text-center">
         Pelo canal de atendimento ao cliente estamos disponíveis para
         atendê-lo(a) da melhor forma
       </p>
 
-      <div className="d-flex flex-column justify-content-center flex-md-row gap-5 w-100">
-        <div className="d-flex flex-column align-items-right justify-content-around">
+      <div className="d-flex flex-column flex-md-row gap-5 w-100">
+        <div className="d-flex flex-column align-items-md-center align-items-center justify-content-around w-100">
           <ul className="list-unstyled mt-4">
-          <p>Entre em contato ou visite-nos.</p>
-            <li className="mb-2 d-flex align-items-center">
+            <p className="text-center text-md-start">
+              Entre em contato ou visite-nos.
+            </p>
+            <li className="mb-2 d-flex align-items-center justify-content-md-start justify-content-center">
               <BsFillTelephoneFill className="me-2" /> (89) 99415-9560
             </li>
-            <li className="mb-2 d-flex align-items-center">
+            <li className="mb-2 d-flex align-items-center justify-content-md-start justify-content-center">
               <BsWhatsapp className="me-2" /> (89) 99415-9560
             </li>
-            <li className="mb-2 d-flex align-items-center">
+            <li className="mb-2 d-flex align-items-center justify-content-md-start justify-content-center">
               <BsEnvelopeFill className="me-2" /> amiltonbrandao11@gmail.com
             </li>
-            <li className="mb-2 d-flex align-items-center">
-              <BsFillGeoAltFill className="me-2" /> Avenida Senador Dirceu
-              Arcoverde, 1965 - Irapuá II <br /> Floriano, PI, 64.800-430
+            <li className="mb-2 d-flex align-items-center justify-content-md-start justify-content-center text-center">
+              <BsFillGeoAltFill className="me-2" /> Rua Projetada Doze, 493 -
+              Tiberão - Floriano, PI, 64.804-580
             </li>
-            <li className="budget mt-4 d-flex align-items-center">
+            <li className="mt-4">
               <a
-                href="https://api.whatsapp.com/send?phone=5589994159560&text=Ol%C3%A1,%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20de%20um%20brinquedo."
-                className="btn btn-success text-uppercase d-flex align-items-center"
+                href="https://www.google.com/maps/dir/?api=1&destination=Rua+Projetada+Doze,+493+-+Tiberão+-+Floriano,+PI,+64804-580"
+                className="btn btn-success text-uppercase d-flex align-items-center justify-content-center gap-2"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ whiteSpace: "nowrap"}}
+                style={{
+                  whiteSpace: "nowrap",
+                  backgroundColor: "#25D366",
+                  border: "none",
+                }}
               >
                 <BsWhatsapp /> Fale conosco pelo WhatsApp
               </a>
             </li>
-          </ul>
 
-          <div className="mt-4">
-            <h3>Como chegar?</h3>
-            <a
-              href="https://www.google.com/maps/dir/?api=1&destination=Avenida+Senador+Dirceu+Arcoverde,+1965+-+Irapuá+II,+Floriano,+PI,+64800-430"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-primary d-flex align-items-center justify-content-center gap-2 mt-2 route-button"
-            >
-              <BsCursorFill /> Ver rotas
-            </a>
-          </div>
+            <li className="mt-5">
+              <h3 className="text-center">Como chegar?</h3>
+              <a
+                href="https://www.google.com/maps/dir/?api=1&destination=Rua+Projetada+Doze,+493+-+Tiberão+-+Floriano,+PI,+64804-580"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary d-flex align-items-center justify-content-center gap-2 mt-2 text-center"
+              >
+                <BsCursorFill /> Ver rotas
+              </a>
+            </li>
+          </ul>
         </div>
 
-        <div className="map-container mt-4">
+        <div className="map-container mt-4 w-100">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.9789453236394!2d-43.03981722976315!3d-6.772416551227565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7837d23e7732c75%3A0x53160cef767d3d47!2sAv.%20Sen.%20Dirceu%20Arco-Verde%2C%201965%20-%20Irapu%C3%A3%20I%2C%20Floriano%20-%20PI%2C%2064800-000!5e0!3m2!1spt-PT!2sbr!4v1737647750564!5m2!1spt-PT!2sbr"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.9999999999995!2d-43.02499999999999!3d-6.771999999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwNDYnMTIuOCJTIDQzwrAwMScyNC4wIlc!5e0!3m2!1sen!2sbr!4v1630000000000!5m2!1sen!2sbr"
             width="600"
             height="450"
             style={{ border: 0 }}

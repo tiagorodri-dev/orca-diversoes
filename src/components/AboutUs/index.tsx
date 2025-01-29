@@ -40,10 +40,10 @@ function AboutUs() {
           width={200}
         />
         <p className="paragraph">
-          Somos a Orca Diversões e Entretenimento, uma empresa localizada em
-          Floriano, PI, especializada no desenvolvimento de brinquedos
-          personalizados e na criação de experiências inesquecíveis para
-          crianças. Com mais de 27 anos de atuação no mercado de cenografia e
+          Somos a Orca Diversões e Entretenimento, uma empresa especializada no
+          desenvolvimento de brinquedos personalizados e na criação de
+          experiências inesquecíveis para crianças e estamos localizados em Floriano, PI.
+          Com mais de 27 anos de atuação no mercado de cenografia e
           entretenimento, nos destacamos pela nossa paixão em transformar ideias
           criativas em realidade. <br />
           <br />
@@ -78,7 +78,7 @@ function AboutUs() {
               </span>
             </div>
             <div className="countup d-flex flex-column align-items-center justify-content-center">
-              <BsPuzzleFill size={42} className="mb-2"/>
+              <BsPuzzleFill size={42} className="mb-2" />
               <span>
                 + <CountUp end={78} duration={15} /> brinquedos desenvolvidos e
                 entregues

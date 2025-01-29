@@ -6,6 +6,7 @@ function Contact() {
     <div
       className="contact-section p-5 d-flex flex-column justify-content-center align-items-center"
       id="contato"
+      data-aos="fade-down" data-aos-duration="2000"
     >
       <h1 className="fw-bold">Fale conosco</h1>
       <p className="text-center">

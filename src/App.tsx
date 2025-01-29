@@ -6,12 +6,15 @@ import AboutUs from "./components/AboutUs";
 import OurServices from "./components/OurServices";
 import Contact from "./components/Contact";
 import Spinner from "react-bootstrap/Spinner";
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 import "./styles/GlobalStyles.css";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
+    AOS.init();
     const handleLoad = () => {
       setIsLoading(false);
     };

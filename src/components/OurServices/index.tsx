@@ -13,6 +13,7 @@ function OurServices() {
       className="p-5 d-flex flex-column justify-content-center align-items-center"
       id="nossos-servicos"
       style={{ backgroundColor: "#464E50", color: "#FFFFFF" }}
+      data-aos="zoom-in" data-aos-duration="2000"
     >
       <h1 className="fw-bold">Nossos serviços</h1>
 

@@ -29,7 +29,7 @@ function AboutUs() {
   return (
     <div
       className="about-us-section p-5 d-flex flex-column justify-content-center align-items-center"
-      id="quem-somos"
+      id="quem-somos" data-aos="fade-right" data-aos-duration="2000"
     >
       <h1 className="text-center fw-bold">Conheça um pouco mais sobre nós</h1>
       <div className="d-flex flex-column flex-md-row align-items-center gap-3 gap-5 mt-4">

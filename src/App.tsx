@@ -18,8 +18,13 @@ function App() {
 
     window.addEventListener("load", handleLoad);
 
+    const loadTimeout = setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
+
     return () => {
       window.removeEventListener("load", handleLoad);
+      clearTimeout(loadTimeout);
     };
   }, []);
 

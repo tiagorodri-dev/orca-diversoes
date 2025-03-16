@@ -1,8 +1,8 @@
 import { useState, useRef, useEffect } from "react";
 import CountUp from "react-countup";
 import logo from "../../assets/logo-orca.webp";
-import "./style.css";
 import { BsAwardFill, BsPuzzleFill } from "react-icons/bs";
+import "./style.css";
 
 function AboutUs() {
   const [isVisible, setIsVisible] = useState(false);

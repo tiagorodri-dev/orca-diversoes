@@ -65,7 +65,7 @@ function Contact() {
 
         <div className="map-container mt-4 w-100">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.9999999999995!2d-43.02499999999999!3d-6.771999999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwNDYnMTIuOCJTIDQzwrAwMScyNC4wIlc!5e0!3m2!1sen!2sbr!4v1630000000000!5m2!1sen!2sbr"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.9058088574147!2d-43.0144568258954!3d-6.781316966315931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7836328569c9f4b%3A0x66f51c9f79a9d91d!2sR.%20Projetada%20Doze%2C%20493%20-%20Tiber%C3%A3o%2C%20Floriano%20-%20PI%2C%2064804-580!5e0!3m2!1spt-PT!2sbr!4v1742144016631!5m2!1spt-PT!2sbr"
             width="600"
             height="450"
             style={{ border: 0 }}

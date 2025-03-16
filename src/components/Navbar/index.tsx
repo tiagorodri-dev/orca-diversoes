@@ -13,10 +13,9 @@ function Navbar() {
 
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
-      <div className="container-fluid">
+      <div className="container">
         <a className="navbar-brand d-flex align-items-center gap-2" href="#">
-          <img src={logo} alt="Logo Orca Diversões e Entretenimento" width={30} />
-          Orca Diversões
+          <img src={logo} alt="Logo Orca Diversões e Entretenimento" width={50} />
         </a>
         <button
           className="navbar-toggler"
